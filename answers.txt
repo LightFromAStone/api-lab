@@ -1,0 +1,22 @@
+Part 1:
+
+1. https://swapi.dev/api/people/4
+2. https://swapi.dev/api/planets/2
+3. https://swapi.dev/api/starships/10
+4. https://swapi.dev/api/people/2, https://swapi.dev/api/species/2
+5. https://swapi.dev/api/films/1/,  https://swapi.dev/api/films/2/, https://swapi.dev/api/films/3/, https://swapi.dev/api/films/4/, https://swapi.dev/api/films/5/, https://swapi.dev/api/films/6/
+6. https://swapi.dev/api/starships/?search=millennium falcon
+
+
+Part 2:
+
+1. Expects params and a body. Expects the text for the new post
+2. Returns an array of all posts
+3. https://practiceapi.devmountain.com/api/555
+4. 200, 409
+5. https://practiceapi.devmountain.com/api/posts/, { "text": "Peter" }
+6. https://practiceapi.devmountain.com/api/posts/?id=519, { "text": "Blue" }
+7. https://practiceapi.devmountain.com/api/posts/filter/?text=blue
+8. application/json; charset=utf-8
+9. 409 returns when missing query id or body text
+10. if you still include posts (ex: api/posts/?id=519) it just pretends the query isn't there. But if it is more like (ex: api/?id=519) then it returns 404
